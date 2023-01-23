@@ -99,7 +99,7 @@ pexpect==4.8.0
 phonenumbers==8.12.39
 pickleshare==0.7.5
 pilkit==2.0
-Pillow==9.0.0
+Pillow==9.3.0
 platformdirs==2.4.1
 pluggy==1.0.0
 pre-commit==2.16.0
