@@ -400,7 +400,7 @@ JET_THEMES = [
 ]
 
 # CKEDITOR_BASEPATH = '/advance_scholar/static/ckeditor/ckeditor/'
-# CKEDITOR_UPLOAD_PATH = cke_uploads
+CKEDITOR_UPLOAD_PATH = '/ckeditor/'
 # CKEDITOR_FILENAME_GENERATOR = 'utils.upload_paths.cke_uploads'
 CKEDITOR_IMAGE_BACKEND = "pillow"
 CKEDITOR_RESTRICT_BY_USER = True
