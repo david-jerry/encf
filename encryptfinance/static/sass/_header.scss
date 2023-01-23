@@ -1,0 +1,23 @@
+#about-section {
+  background-color: var(--side-bar);
+  min-height: 360px;
+  padding-top: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  .title {
+    line-height: 1.33;
+    font-weight: 200;
+    margin-bottom: .2rem;
+  }
+
+  .desc {
+    margin-bottom: 4rem;
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,196 @@
+:root {
+  --header-family: "Paytone One", sans-serif;
+  --quote-family: "Architects Daughter", cursive;
+  --paragraph-family: "Montserrat", sans-serif;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #100f0f;
+    --color-heading: #FFA000;
+    --color-accent: #607D8B;
+    --color-text: #e6e6e6;
+    --shadow: drop-shadow(1 2px 4px #000000);
+    --side-bar: #222a2e;
+    --side-active: #FFA000;
+    --dark-side-active: darken(#FFA000, 10%);
+    --nav-bar: #253035;
+    --dark-nav-bar: #e08f02;
+    --card-color: #253035;
+    --profile-color: #253035;
+  }
+
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --color-background: #e6e6e6;
+    --color-heading: #100f0f;
+    --color-accent: #607D8B;
+    --color-text: #212121;
+    --shadow: drop-shadow(1 2px 4px #000000);
+    --side-bar: #FFF;
+    --side-active: #e6e6e6;
+    --dark-side-active: darken(#e6e6e6, 10%);
+    --nav-bar: #FFA000;
+    --dark-nav-bar: #181f23;
+    --card-color: #fff;
+    --profile-color: #253035;
+  }
+}
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+  .form-group {
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    label {
+      color: var(--color-accent);
+    }
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    input[type='text'],
+    input[type='email'],
+    input[type='password'] {
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: 0;
+      box-shadow: none;
+      border-bottom: 2px solid var(--color-background);
+      &:focus,
+      &:valid{
+        border: 0;
+        background-color: none;
+        border-bottom: 2px solid var(--color-heading);
+      }
+    }
+  }
+}
+
+html {
+  // padding and margin reset
+  padding: 0;
+  margin: 0;
+
+  font-size: 100%;
+  color: var(--color-text);
+
+  /* box sizing default styling */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  /* transition */
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+
+  /* overflow-x */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-text) #e2e2e2;
+  scrollbar-width: thin;
+
+  /* text size adjust */
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+}
+
+*::-webkit-scrollbar {
+  height: .6rem;
+  width: .6rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-text);
+  border-radius: .3rem;
+}
+
+
+*,
+*::before,
+*::after {
+  /* box sizing default styling inheriting from the body element */
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+
+  /* transition inheriting from the body element  */
+  transition: inherit;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -ms-transition: inherit;
+  -o-transition: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $paragraph-family;
+  font-size: inherit;
+  font-weight: 300;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+// Text
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--color-text);
+  font-family: $header-family;
+  margin-top: 0px;
+  margin-bottom: .4rem;
+}
+
+a:link,
+a:focus,
+a:visited,
+a:hover {
+  text-decoration: none;
+  font-weight: 500;
+}
+a:visited,
+a:link{
+  color: var(--color-text);
+}
+a:focus,
+a:hover {
+  color: var(--color-heading);
+}
+
+// display tags as block
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+.btn-warning {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
