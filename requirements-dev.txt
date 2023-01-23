@@ -57,7 +57,7 @@ docutils==0.17.1
 executing==0.8.2
 factory-boy==3.2.1
 Faker==11.3.0
-feedparser==5.2.1
+feedparser==6.0.10
 filelock==3.4.2
 flake8==4.0.1
 flake8-isort==4.1.1
