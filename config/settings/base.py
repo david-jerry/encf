@@ -8,7 +8,7 @@ from django.contrib.messages import constants as messages
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import gettext_lazy as _
 
-from encryptfinance.utils.upload_paths import cke_uploads
+# from encryptfinance.utils.upload_paths import cke_uploads
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # encryptfinance/
@@ -400,8 +400,8 @@ JET_THEMES = [
 ]
 
 # CKEDITOR_BASEPATH = '/advance_scholar/static/ckeditor/ckeditor/'
-CKEDITOR_UPLOAD_PATH = cke_uploads
-CKEDITOR_FILENAME_GENERATOR = 'utils.upload_paths.cke_uploads'
+# CKEDITOR_UPLOAD_PATH = cke_uploads
+# CKEDITOR_FILENAME_GENERATOR = 'utils.upload_paths.cke_uploads'
 CKEDITOR_IMAGE_BACKEND = "pillow"
 CKEDITOR_RESTRICT_BY_USER = True
 CKEDITOR_BROWSE_SHOW_DIRS = True
